@@ -1,0 +1,2037 @@
+{
+	"info": {
+		"_postman_id": "ae9e19b0-8ed0-4463-8b78-eebafe6ed31f",
+		"name": "serviceDeGestionDeStage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30535996",
+		"_collection_link": "https://orange-eclipse-258063.postman.co/workspace/My-Workspace~6729e0bb-79c3-4623-8ba2-9f5ca330ba82/collection/30535996-ae9e19b0-8ed0-4463-8b78-eebafe6ed31f?action=share&source=collection_link&creator=30535996"
+	},
+	"item": [
+		{
+			"name": "Étudiant",
+			"item": [
+				{
+					"name": "listeÉtudiants",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Alicia123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "alicia.blackberry@restaurantapi.dti",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "alicia",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "http://crosemont.dti.g66.restaurantAPI",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "It_G1BypR70o0IC-BMOvU0UOO-mlkraiqNb9zafHypTw36zHHkYzHhZCTNkrdM32",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "T3Qe6NpPDBNAubybIepBpQ5FcJ0jqg6j",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/étudiants",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"étudiants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtenirÉtudiantParCode",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "tokenName",
+									"value": "stageExploitAPIEtudiant",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "othmanesedjari@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Jtmmaman1963",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "http://crosemont.dti.g66.service_gestion_stage",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/authorize",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "It_G1BypR70o0IC-BMOvU0UOO-mlkraiqNb9zafHypTw36zHHkYzHhZCTNkrdM32",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "T3Qe6NpPDBNAubybIepBpQ5FcJ0jqg6j",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/étudiant",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"étudiant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtenirProfilParÉtudiant",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/étudiants/2/profil",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"étudiants",
+								"2",
+								"profil"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtenirDocumentsParÉtudiant",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/étudiants/2/documents",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"étudiants",
+								"2",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtenirCandidaturesParÉtudiant",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/étudiants/2/candidatures",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"étudiants",
+								"2",
+								"candidatures"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inscrireÉtudiant",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Jtmmaman1963",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "othmanesedjari@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "http://crosemont.dti.g66.service_gestion_stage",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "stageExploitAPI",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/authorize",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "It_G1BypR70o0IC-BMOvU0UOO-mlkraiqNb9zafHypTw36zHHkYzHhZCTNkrdM32",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "T3Qe6NpPDBNAubybIepBpQ5FcJ0jqg6j",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"codeUtilisateur\": \"auth0|657a75ca5b57ea5dec563707\",\r\n  \"nomUtilisateur\": \"Tang\",\r\n  \"prénomUtilisateur\": \"Bao\",\r\n  \"courrielUtilisateur\": \"baotang@gmail.com\",\r\n  \"téléphoneUtilisateur\": \"5141234567\",\r\n  \"profilInformatique\": \"RÉSAUTIQUE\",\r\n  \"stageIntégration\": true,\r\n  \"adresseÉtudiant\": \"6810 avenue papineau\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/étudiants",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"étudiants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifierÉtudiant",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"codeUtilisateur\": 30,\r\n  \"nomUtilisateur\": \"Sarkes\",\r\n  \"prénomUtilisateur\": \"Anayees\",\r\n  \"courrielUtilisateur\": \"1428398@crosemont.qc.ca\",\r\n  \"téléphoneUtilisateur\": \"5141234567\",\r\n  \"profilInformatique\": \"RÉSAUTIQUE\",\r\n  \"stageIntégration\": true,\r\n  \"adresseÉtudiant\": \"1234567 Rue Anayees\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/étudiants/30",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"étudiants",
+								"30"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "supprimerÉtudiant",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"codeUtilisateur\": 30,\r\n  \"nomUtilisateur\": \"Sarkes\",\r\n  \"prénomUtilisateur\": \"Anayees\",\r\n  \"courrielUtilisateur\": \"1428398@crosemont.qc.ca\",\r\n  \"téléphoneUtilisateur\": \"5141234567\",\r\n  \"profilInformatique\": \"RÉSAUTIQUE\",\r\n  \"stageIntégration\": true,\r\n  \"adresseÉtudiant\": \"1234567 Rue Anayees\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/étudiants/30",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"étudiants",
+								"30"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "oauth2",
+				"oauth2": [
+					{
+						"key": "password",
+						"value": "Jtmmaman1963",
+						"type": "string"
+					},
+					{
+						"key": "username",
+						"value": "othmanesedjari@gmail.com",
+						"type": "string"
+					},
+					{
+						"key": "clientSecret",
+						"value": "It_G1BypR70o0IC-BMOvU0UOO-mlkraiqNb9zafHypTw36zHHkYzHhZCTNkrdM32",
+						"type": "string"
+					},
+					{
+						"key": "clientId",
+						"value": "T3Qe6NpPDBNAubybIepBpQ5FcJ0jqg6j",
+						"type": "string"
+					},
+					{
+						"key": "accessTokenUrl",
+						"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/token",
+						"type": "string"
+					},
+					{
+						"key": "tokenRequestParams",
+						"value": [
+							{
+								"key": "audience",
+								"value": "http://crosemont.dti.g66.service_gestion_stage",
+								"enabled": true,
+								"send_as": "request_body"
+							}
+						],
+						"type": "any"
+					},
+					{
+						"key": "tokenName",
+						"value": "othmane",
+						"type": "string"
+					},
+					{
+						"key": "refreshRequestParams",
+						"value": [],
+						"type": "any"
+					},
+					{
+						"key": "authRequestParams",
+						"value": [],
+						"type": "any"
+					},
+					{
+						"key": "challengeAlgorithm",
+						"value": "S256",
+						"type": "string"
+					},
+					{
+						"key": "grant_type",
+						"value": "password_credentials",
+						"type": "string"
+					},
+					{
+						"key": "authUrl",
+						"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/authorize",
+						"type": "string"
+					},
+					{
+						"key": "addTokenTo",
+						"value": "header",
+						"type": "string"
+					},
+					{
+						"key": "client_authentication",
+						"value": "header",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Employeur",
+			"item": [
+				{
+					"name": "listeEmployeurs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employeurs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employeurs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EmployeurParCode",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Martin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jeanmartin@cgi.com",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "stageExploitAPIEmployeur",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "http://crosemont.dti.g66.service_gestion_stage",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/authorize",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "It_G1BypR70o0IC-BMOvU0UOO-mlkraiqNb9zafHypTw36zHHkYzHhZCTNkrdM32",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "T3Qe6NpPDBNAubybIepBpQ5FcJ0jqg6j",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employeur",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employeur"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ajouter un employeur",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Amine123",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "amineFord",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "amineford@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "http://crosemont.dti.g66.service_gestion_stage",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/authorize",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "It_G1BypR70o0IC-BMOvU0UOO-mlkraiqNb9zafHypTw36zHHkYzHhZCTNkrdM32",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "T3Qe6NpPDBNAubybIepBpQ5FcJ0jqg6j",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codeUtilisateur\": \"auth0|65848d8631f904c601fc9885\",\r\n    \"nomUtilisateur\": \"Ford\",\r\n    \"prénomUtilisateur\": \"Amine\", \r\n    \"courrielUtilisateur\": \"amineford@gmail.com\",\r\n    \"téléphoneUtilisateur\": \"514-691-4679\",\r\n    \"codeEntreprise\": {\r\n        \"nomEntreprise\": \"Ford\",\r\n        \"adresseEntreprise\": \"Montreal\"\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employeurs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employeurs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifier un employeur",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codeUtilisateur\": 103,\r\n    \"nomUtilisateur\": \"Sedji\",\r\n    \"prénomUtilisateur\": \"OTTO\",\r\n    \"courrielUtilisateur\": \"otti@example.com\",\r\n    \"téléphoneUtilisateur\": \"5147467728\",\r\n    \"codeEntreprise\": {\r\n        \"codeEntreprise\": 1,\r\n        \"nomEntreprise\": \"NomEntreprise1\",\r\n        \"adresseEntreprise\": {\r\n            \"numéroCivique\": 123,\r\n            \"rue\": \"Rue de l'Entreprise\",\r\n            \"ville\": \"Ville1\",\r\n            \"codePostal\": \"12345\",\r\n            \"pays\": \"Pays1\"\r\n        }\r\n    },\r\n    \"listeStagiaires\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employeurs/103",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employeurs",
+								"103"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "supprimer un employeur",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employeurs/103",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employeurs",
+								"103"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Entreprise",
+			"item": [
+				{
+					"name": "listeEntreprise",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/entreprises",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entreprises"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EntrepriseParCode",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/entreprises/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"entreprises",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ajouterEntreprise",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "EntrepriseParEmployeur",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employeurs/1/entreprises",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employeurs",
+								"1",
+								"entreprises"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Offre",
+			"item": [
+				{
+					"name": "listeOffres",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/offres",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"offres"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listeOffreParEmployeur",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Martin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jeanmartin@cgi.com",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "stageExploitAPIEmployeur",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "http://crosemont.dti.g66.service_gestion_stage",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/authorize",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "It_G1BypR70o0IC-BMOvU0UOO-mlkraiqNb9zafHypTw36zHHkYzHhZCTNkrdM32",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "T3Qe6NpPDBNAubybIepBpQ5FcJ0jqg6j",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employeur/offres",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employeur",
+								"offres"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "creer une offre",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Martin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jeanmartin@cgi.com",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "stageExploitAPIEmployeur",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "http://crosemont.dti.g66.service_gestion_stage",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/authorize",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "It_G1BypR70o0IC-BMOvU0UOO-mlkraiqNb9zafHypTw36zHHkYzHhZCTNkrdM32",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "T3Qe6NpPDBNAubybIepBpQ5FcJ0jqg6j",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idOffre\": 2,\r\n        \"employeur\": {\r\n            \"codeUtilisateur\": \"auth0|6578aedf50a7dcd59188ff8e\",\r\n            \"nomUtilisateur\": \"Martin\",\r\n            \"prénomUtilisateur\": \"Jean\",\r\n            \"courrielUtilisateur\": \"jeanmartin@cgi.com\",\r\n            \"téléphoneUtilisateur\": \"514-691-4679\",\r\n            \"codeEntreprise\": {\r\n                \"codeEntreprise\": 4,\r\n                \"nomEntreprise\": \"CGI\",\r\n                \"adresseEntreprise\": \"Montreal\"\r\n            },\r\n            \"listeStagiaires\": []\r\n        },\r\n        \"titrePoste\": \"Developpeur FrontEnd F\",\r\n        \"modeEmploi\": \"PRÉSENTIEL\",\r\n        \"description\": \"Notre entreprise dynamique est à la recherche d'un développeur FrontEnd passionné pour rejoindre notre équipe talentueuse. En tant que développeur web, vous serez responsable de la conception, du développement et de la maintenance de nos applications FrontEnd. \",\r\n        \"candidatures\": []\r\n    }\r\n    ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/employeur/offres",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employeur",
+								"offres"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listeCandidaturesParOffre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/offres/1/candidatures",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"offres",
+								"1",
+								"candidatures"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "offreParCode",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/offres/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"offres",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modifier une offre",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "tokenName",
+									"value": "JeanMartin1",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "http://crosemont.dti.g66.service_gestion_stage",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "clientSecret",
+									"value": "It_G1BypR70o0IC-BMOvU0UOO-mlkraiqNb9zafHypTw36zHHkYzHhZCTNkrdM32",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "T3Qe6NpPDBNAubybIepBpQ5FcJ0jqg6j",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Martin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jeanmartin@cgi.com",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"idOffre\": 2,\r\n        \"employeur\": {\r\n            \"codeUtilisateur\": \"auth0|6578aedf50a7dcd59188ff8e\",\r\n            \"nomUtilisateur\": \"Martin\",\r\n            \"prénomUtilisateur\": \"Jean\",\r\n            \"courrielUtilisateur\": \"jeanmartin@cgi.com\",\r\n            \"téléphoneUtilisateur\": \"514-691-4679\",\r\n            \"codeEntreprise\": {\r\n                \"codeEntreprise\": 4,\r\n                \"nomEntreprise\": \"CGI\",\r\n                \"adresseEntreprise\": \"Montreal\"\r\n            },\r\n            \"listeStagiaires\": []\r\n        },\r\n        \"titrePoste\": \"Developpeur FrontEnd \",\r\n        \"modeEmploi\": \"PRÉSENTIEL\",\r\n        \"description\": \"Notre entreprise dynamique est à la recherche d'un développeur FrontEnd passionné pour rejoindre notre équipe talentueuse. En tant que développeur web, vous serez responsable de la conception, du développement et de la maintenance de nos applications FrontEnd. \",\r\n        \"candidatures\": [\r\n            {\r\n                \"codeCandidature\": 3,\r\n                \"offre\": {\r\n                    \"idOffre\": 2,\r\n                    \"employeur\": {\r\n                        \"codeUtilisateur\": \"auth0|6578aedf50a7dcd59188ff8e\",\r\n                        \"nomUtilisateur\": \"Martin\",\r\n                        \"prénomUtilisateur\": \"Jean\",\r\n                        \"courrielUtilisateur\": \"jeanmartin@cgi.com\",\r\n                        \"téléphoneUtilisateur\": \"514-691-4679\",\r\n                        \"codeEntreprise\": {\r\n                            \"codeEntreprise\": 4,\r\n                            \"nomEntreprise\": \"CGI\",\r\n                            \"adresseEntreprise\": \"Montreal\"\r\n                        },\r\n                        \"listeStagiaires\": []\r\n                    },\r\n                    \"titrePoste\": \"Developpeur FrontEnd\",\r\n                    \"modeEmploi\": \"PRÉSENTIEL\",\r\n                    \"description\": \"Notre entreprise dynamique est à la recherche d'un développeur FrontEnd passionné pour rejoindre notre équipe talentueuse. En tant que développeur web, vous serez responsable de la conception, du développement et de la maintenance de nos applications FrontEnd. \",\r\n                    \"candidatures\": []\r\n                },\r\n                \"étudiant\": {\r\n                    \"codeUtilisateur\": \"auth0|656dfb73fb354bf40e3d0e60\",\r\n                    \"nomUtilisateur\": \"othmane\",\r\n                    \"prénomUtilisateur\": \"sedjari\",\r\n                    \"courrielUtilisateur\": \"ottosedjari@gmail.com\",\r\n                    \"téléphoneUtilisateur\": \"5141234567\",\r\n                    \"profilInformatique\": \"RÉSAUTIQUE\",\r\n                    \"stageIntégration\": true,\r\n                    \"adresseÉtudiant\": \"6810 avenue papineau\"\r\n                },\r\n                \"étatCandidature\": \"Encours\"\r\n            }\r\n        ]\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/offres/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"offres",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Supprimer Une offre",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "tokenName",
+									"value": "JeanMartin1",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "http://crosemont.dti.g66.service_gestion_stage",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "clientSecret",
+									"value": "It_G1BypR70o0IC-BMOvU0UOO-mlkraiqNb9zafHypTw36zHHkYzHhZCTNkrdM32",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "T3Qe6NpPDBNAubybIepBpQ5FcJ0jqg6j",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Martin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jeanmartin@cgi.com",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/offres/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"offres",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stage",
+			"item": [
+				{
+					"name": "obtenirStageParÉtudiant",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/etudiants/stage",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"etudiants",
+								"stage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifierProgressionStage",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idStage\": 1,\r\n    \"stagiaire\": {\r\n        \"codeUtilisateur\": 1,\r\n        \"nomUtilisateur\": \"NomÉtudiant1\",\r\n        \"prénomUtilisateur\": \"PrénomÉtudiant1\",\r\n        \"courrielUtilisateur\": \"emailÉtudiant1@example.com\",\r\n        \"téléphoneUtilisateur\": \"(514) 123-4567\",\r\n        \"profilInformatique\": \"PROGRAMMATION\",\r\n        \"stageIntégration\": false,\r\n        \"adresseÉtudiant\": {\r\n            \"numéroCivique\": 789,\r\n            \"rue\": \"Avenue de la Sagesse\",\r\n            \"ville\": \"Ville3\",\r\n            \"codePostal\": \"54321\",\r\n            \"pays\": \"Pays3\"\r\n        }\r\n    },\r\n    \"candidatureAcceptée\": {\r\n        \"codeCandidature\": 1,\r\n        \"offre\": {\r\n            \"idOffre\": 1,\r\n            \"employeur\": {\r\n                \"codeUtilisateur\": 101,\r\n                \"nomUtilisateur\": \"Nom1\",\r\n                \"prénomUtilisateur\": \"Prenom1\",\r\n                \"courrielUtilisateur\": \"email1@example.com\",\r\n                \"téléphoneUtilisateur\": \"123456789\",\r\n                \"codeEntreprise\": {\r\n                    \"codeEntreprise\": 1,\r\n                    \"nomEntreprise\": \"NomEntreprise1\",\r\n                    \"adresseEntreprise\": {\r\n                        \"numéroCivique\": 123,\r\n                        \"rue\": \"Rue de l'Entreprise\",\r\n                        \"ville\": \"Ville1\",\r\n                        \"codePostal\": \"12345\",\r\n                        \"pays\": \"Pays1\"\r\n                    }\r\n                },\r\n                \"listeStagiaires\": []\r\n            },\r\n            \"titrePoste\": \"Titre du poste 1\",\r\n            \"modeEmploi\": \"PRÉSENTIEL\",\r\n            \"description\": \"Description de l'offre 1\"\r\n        },\r\n        \"étudiant\": {\r\n            \"codeUtilisateur\": 1,\r\n            \"nomUtilisateur\": \"NomÉtudiant1\",\r\n            \"prénomUtilisateur\": \"PrénomÉtudiant1\",\r\n            \"courrielUtilisateur\": \"emailÉtudiant1@example.com\",\r\n            \"téléphoneUtilisateur\": \"(514) 123-4567\",\r\n            \"profilInformatique\": \"PROGRAMMATION\",\r\n            \"stageIntégration\": false,\r\n            \"adresseÉtudiant\": {\r\n                \"numéroCivique\": 789,\r\n                \"rue\": \"Avenue de la Sagesse\",\r\n                \"ville\": \"Ville3\",\r\n                \"codePostal\": \"54321\",\r\n                \"pays\": \"Pays3\"\r\n            }\r\n        },\r\n        \"étatCandidature\": \"Encours\"\r\n    },\r\n    \"superviseurAssigné\": null,\r\n    \"entreprise\": {\r\n        \"codeEntreprise\": 1,\r\n        \"nomEntreprise\": \"NomEntreprise1\",\r\n        \"adresseEntreprise\": {\r\n            \"numéroCivique\": 123,\r\n            \"rue\": \"Rue de l'Entreprise\",\r\n            \"ville\": \"Ville1\",\r\n            \"codePostal\": \"12345\",\r\n            \"pays\": \"Pays1\"\r\n        }\r\n    },\r\n    \"stageProgression\": \"TERMINÉ\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/stages/1/progression",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stages",
+								"1",
+								"progression"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "créerUneStage",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "tokenName",
+									"value": "Othmane",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Jtmmaman1963",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "othmanesedjari@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "http://crosemont.dti.g66.service_gestion_stage",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/authorize",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "It_G1BypR70o0IC-BMOvU0UOO-mlkraiqNb9zafHypTw36zHHkYzHhZCTNkrdM32",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "T3Qe6NpPDBNAubybIepBpQ5FcJ0jqg6j",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idStage\": 1,\r\n    \"stagiaire\":  {\r\n        \"codeUtilisateur\": \"auth0|656dfb73fb354bf40e3d0e60\",\r\n        \"nomUtilisateur\": \"othmane\",\r\n        \"prénomUtilisateur\": \"sedjari\",\r\n        \"courrielUtilisateur\": \"ottosedjari@gmail.com\",\r\n        \"téléphoneUtilisateur\": \"5141234567\",\r\n        \"profilInformatique\": \"RÉSAUTIQUE\",\r\n        \"stageIntégration\": true,\r\n        \"adresseÉtudiant\": \"6810 avenue papineau\"\r\n    },\r\n    \"candidatureAcceptée\": { \"codeCandidature\": \"1\" },\r\n    \"superviseurAssigné\": \"Dini Ahamada\",\r\n    \"employeur\": {\r\n                \"codeUtilisateur\": \"auth0|6578aedf50a7dcd59188ff8e\",\r\n                \"nomUtilisateur\": \"Martin\",\r\n                \"prénomUtilisateur\": \"Jean\", \r\n                \"courrielUtilisateur\": \"jeanmartin@cgi.com\",\r\n                \"téléphoneUtilisateur\": \"514-691-4679\",\r\n                \"codeEntreprise\": {\r\n                    \"nomEntreprise\": \"CGI\",\r\n                    \"adresseEntreprise\": \"Montreal\"\r\n                }\r\n},\r\n    \"stageProgression\": \"DÉBUTÉ\",\r\n    \"lieu\": \"Laval\",\r\n    \"dateDébut\": \"2023-12-01\",\r\n    \"dateFin\": \"2024-06-30\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/candidatures/1/stages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"candidatures",
+								"1",
+								"stages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtenirStages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/stages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stages"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Candidature",
+			"item": [
+				{
+					"name": "CandidaturesParOffre",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Jtmmaman1963",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "othmanesedjari@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "othmane",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "http://crosemont.dti.g66.service_gestion_stage",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/authorize",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "It_G1BypR70o0IC-BMOvU0UOO-mlkraiqNb9zafHypTw36zHHkYzHhZCTNkrdM32",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "T3Qe6NpPDBNAubybIepBpQ5FcJ0jqg6j",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/offres/1/candidatures",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"offres",
+								"1",
+								"candidatures"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postuler a une offre",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Jtmmaman1963",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "othmanesedjari@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "othmane",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "http://crosemont.dti.g66.service_gestion_stage",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/authorize",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "It_G1BypR70o0IC-BMOvU0UOO-mlkraiqNb9zafHypTw36zHHkYzHhZCTNkrdM32",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "T3Qe6NpPDBNAubybIepBpQ5FcJ0jqg6j",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/offres/1/candidatures",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"offres",
+								"1",
+								"candidatures"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifier etat de la candidature",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "http://crosemont.dti.g66.service_gestion_stage",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "clientSecret",
+									"value": "It_G1BypR70o0IC-BMOvU0UOO-mlkraiqNb9zafHypTw36zHHkYzHhZCTNkrdM32",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "T3Qe6NpPDBNAubybIepBpQ5FcJ0jqg6j",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Martin123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jeanmartin@cgi.com",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "JeanMartin",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/authorize",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"codeCandidature\": 8,\r\n        \"offre\": {\r\n            \"idOffre\": 1,\r\n            \"employeur\": {\r\n                \"codeUtilisateur\": \"auth0|6578aedf50a7dcd59188ff8e\",\r\n                \"nomUtilisateur\": \"Martin\",\r\n                \"prénomUtilisateur\": \"Jean\",\r\n                \"courrielUtilisateur\": \"jeanmartin@cgi.com\",\r\n                \"téléphoneUtilisateur\": \"514-691-4679\",\r\n                \"codeEntreprise\": {\r\n                    \"codeEntreprise\": 4,\r\n                    \"nomEntreprise\": \"CGI\",\r\n                    \"adresseEntreprise\": \"Montreal\"\r\n                },\r\n                \"listeStagiaires\": []\r\n            },\r\n            \"titrePoste\": \"Developpeur Fullstack\",\r\n            \"modeEmploi\": \"PRÉSENTIEL\",\r\n            \"description\": \"Notre entreprise dynamique est à la recherche d'un développeur fullstack passionné pour rejoindre notre équipe talentueuse. En tant que développeur web, vous serez responsable de la conception, du développement et de la maintenance de nos applications fullstack. \",\r\n            \"candidatures\": []\r\n        },\r\n        \"étudiant\": {\r\n            \"codeUtilisateur\": \"auth0|65853520dca1222f3d039fb5\",\r\n            \"nomUtilisateur\": \"Tang\",\r\n            \"prénomUtilisateur\": \"Bao\",\r\n            \"courrielUtilisateur\": \"baotang@gmail.com\",\r\n            \"téléphoneUtilisateur\": \"5141234567\",\r\n            \"profilInformatique\": \"RÉSAUTIQUE\",\r\n            \"stageIntégration\": true,\r\n            \"adresseÉtudiant\": \"6810 avenue papineau\"\r\n        },\r\n        \"étatCandidature\": \"Accepté\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/candidatures/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"candidatures",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CandidaturesParÉtudiant",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/etudiant/candidatures",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"etudiant",
+								"candidatures"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "supprimerCandidature",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "tokenName",
+									"value": "Othmane",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Jtmmaman1963",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "othmanesedjari@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "http://crosemont.dti.g66.service_gestion_stage",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/authorize",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "It_G1BypR70o0IC-BMOvU0UOO-mlkraiqNb9zafHypTw36zHHkYzHhZCTNkrdM32",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "T3Qe6NpPDBNAubybIepBpQ5FcJ0jqg6j",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/candidatures/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"candidatures",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gestion d'accès",
+			"item": [
+				{
+					"name": "authentification",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "http://crosemont.dti.g66.service_gestion_stage",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "tokenName",
+									"value": "stageExploitAPI",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/authorize",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "It_G1BypR70o0IC-BMOvU0UOO-mlkraiqNb9zafHypTw36zHHkYzHhZCTNkrdM32",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "T3Qe6NpPDBNAubybIepBpQ5FcJ0jqg6j",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "tokenName",
+				"value": "StageExploitAPI",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "client_credentials",
+				"type": "string"
+			},
+			{
+				"key": "refreshRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "tokenRequestParams",
+				"value": [
+					{
+						"key": "audience",
+						"value": "http://crosemont.dti.g66.service_gestion_stage",
+						"enabled": true,
+						"send_as": "request_body"
+					}
+				],
+				"type": "any"
+			},
+			{
+				"key": "authRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "challengeAlgorithm",
+				"value": "S256",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "jeanmartin@cgi.com",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "Martin123",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "It_G1BypR70o0IC-BMOvU0UOO-mlkraiqNb9zafHypTw36zHHkYzHhZCTNkrdM32",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "T3Qe6NpPDBNAubybIepBpQ5FcJ0jqg6j",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/authorize",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "https://dev-onozemvyyc217r4a.us.auth0.com/oauth/token",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

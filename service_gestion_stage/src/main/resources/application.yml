@@ -1,0 +1,8 @@
+auth0:
+  audience: http://crosemont.dti.g66.service_gestion_stage
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-onozemvyyc217r4a.us.auth0.com/
